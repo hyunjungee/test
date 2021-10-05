@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6em;
+  font-family: 'Montserrat';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.welcome {
+  text-transform: uppercase;
+}
+
+.welcome::after {
+  content: "welcome~ codingworks";
+  color: yellowgreen;
+}
+/*# sourceMappingURL=style_01.css.map */

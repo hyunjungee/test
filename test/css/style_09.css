@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+body {
+  margin: 0;
+  line-height: 1.6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.frame div {
+  border: 10px solid gold;
+  background-color: deepskyblue;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+}
+
+.box1 {
+  border-radius: 20px;
+}
+
+.box2 {
+  border-radius: 40px;
+}
+
+.box3 {
+  border-radius: 50%;
+}
+
+.box4 {
+  border-radius: 50px 0 50px 0;
+}
+
+.box5 {
+  border-radius: 100% 0 0 0;
+}
+
+.box6 {
+  border-radius: 50% 50% 50% 0;
+}
+
+.box7 {
+  border-radius: 100% 0 100% 0;
+}
+
+.box8 {
+  border-radius: 50% 50% 0 0;
+}
+/*# sourceMappingURL=style_09.css.map */

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  line-height: 1.6em;
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@mixin shadow-item {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  // box-shadow: (0 0 30px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 0, 0, 0.5));
+}
+
+.items {
+  width: 900px;
+  display: flex;
+  gap: 40px;
+  .item {
+    flex: 1;
+    border-radius: 10px;
+    height: 400px;
+    transition: 0.5s;
+    overflow: hidden;
+    &:hover {
+      @include shadow-item;
+      transform: translateY(-15px);
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+}
+

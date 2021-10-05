@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+body {
+  margin: 0;
+  line-height: 1.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.frame {
+  display: flex;
+  flex-wrap: wrap;
+}
+.frame div {
+  border: 10px solid gold;
+  background-color: deepskyblue;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+.box1 {
+  @include border-radius(20px);
+}
+.box2 {
+  @include border-radius(40px);
+}
+.box3 {
+  @include border-radius(50%);
+}
+.box4 {
+  @include border-radius(50px 0 50px 0);
+}
+.box5 {
+  @include border-radius(100% 0 0 0);
+}
+.box6 {
+  @include border-radius(50% 50% 50% 0);
+}
+.box7 {
+  @include border-radius(100% 0 100% 0);
+}
+.box8 {
+  @include border-radius(50% 50% 0 0);
+}

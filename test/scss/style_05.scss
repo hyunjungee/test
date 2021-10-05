@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  line-height: 1.6em;
+  font-family: 'Montserrat';
+}
+
+@mixin links($link, $visited, $active, $hover) {
+  a {
+    text-decoration: none;
+
+    color: $link;
+
+    &:visited {
+      color: $visited;
+    }
+    &:active {
+      color: $active;
+    }
+    &:hover {
+      color: $hover;
+      text-decoration: underline;
+    }
+  }
+}
+
+.btns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include links(royalblue, gold, yellow, crimson);
+}
